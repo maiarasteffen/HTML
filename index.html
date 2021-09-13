@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Adicionei um ícone favorito, o qual aparece na aba do site, utilizei a Tag <link favicon> -->
+    <link rel="shortcut icon" href="iconecoruja.ico" type="image/x-icon">
+    <title>Site Exemplo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Site Demonstrativo</h1>
+        <hr>
+    </header>
+<!--A Tag <h1></h1> representa um título de nível 1-->
+
+<!--Adicionei uma imagem o qual ela muda conforme aumenta o tamanho da janela-->
+<!--Para colocar as imagens na proporcao da janela o qual está sendo utili8zada no momento usa-se a tag <picture> e dentro dele ordena as imagens conforme seu paramêtro-->
+<picture>
+    <source media="(max-width: 750px)" srcset="paisagem-p.png" type="image/png">
+    <source media="(max-width:1050px)" srcset="paisagem-m.png" type="image/png">
+    <img src="paisagem-g.png" alt="">
+</picture>
+
+<hr>
+<!--adicionei também linhas com a Tag <hr>.-->
+<h1>O QUE GOSTO DE FAZER!</h1>
+<!--Abaixo criei um paragrafo bla, bla, bla; com a Tag <p></p>. Para aparecer esse texto escrevi lorem e apertei enter.-->
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, saepe qui earum laborum ex enim nam velit odio consequuntur quaerat itaque asperiores optio, soluta minus cumque, quasi sed atque. Tempore!</p>
+<ul>
+    <!--Aqui coloquei um link interno o qual navega para a página 2, utilizei a tag <a> para o link.-->
+    <li><a href="page02.html">Página 2</a></li>
+</ul>
+<!--Agora adicionei um título de Nivel 2, com a Tag <h2></h2>.-->
+<h2>Símbolos:</h2>
+<!--Adicionei alguns símbolos, para adiciona-los usa-se & + .....  + ; -->
+<p>
+    &reg;
+    &Delta;
+    &copy;
+    &euro;
+</p>
+<h2>Emojis</h2>
+<!--Adicionei alguns emojis também, para adiciona-los usa-se & + # + x + código na emojipedia.-->
+<p>
+    &#x1F60A;
+    &#x1F60E;
+    &#x1F469&#x200D&#x1F393;
+</p>
+<p>Agora estou aprendendo que no HTML5 usamos como semântica</p>
+<p>Para formas e estilos do site utilizo CSS. <br>Como esse estilo
+que está nessa página.</p>
+<h2>Formatações de textos</h2>
+<!--Estou utilizando um título de nível 3, com a Tag <h3></h3>-->
+<h3>Negrito e Destaque:</h3>
+<p>>Nessa frase temos um <b>termo em negrito</b> usando a tag B (não
+    semântica).</p>
+<p>Nesta frase temos um <strong>termo em destaque</strong> usando a tag STRONG (semântica).</p>
+<h3>Itálico e Ênfase</h3>
+<p>Nesta frase temos um <i>termo em itálico</i> usando a tag I (não semântica).</p>
+<p>Nesta frase temos um <em>termo em ênfase</em> usando a tag EM (semântica).</p>
+<h3>Texto marcado</h3>
+<p>Podemos criar também um <mark style="background-color: rgb(141,
+90, 224);">texto marcado</mark> usando a tag MARK (semântica).</p>
+<p>E no outro parágrafo temos<mark>outro texto marcado</mark> no
+final.</p>
+<h3>Texto Grande e Pequeno</h3>
+<!--A Tag <big></big> já não pode ser utilizada por aqui, só pelo CSS.-->
+<p>Estamos criando um <big>texto grande</big>, utilizando a tag BIG
+e um <small>texto pequeno</small> utilizando a Tag SMALL nesse
+parágrafo.</p>
+<h3>Texto Deletado</h3>
+<p>Podemos marcar um <del>texto como excluído</del> para indicar
+que ele deve ser lido mas não considerado, usando a tag DEL.</p>
+<h3>Texto Incluido</h3>
+<p>Podemos marcar um <ins>texto como inserido</ins> para dar uma
+ênfase e indicar que ele foi adicionado depois, usando a tag INS</p>
+<p>Existe também o <u>texto sublinhado</u> com a tag U (não
+semântica).</p>
+<h3>Texto sobrescrito</h3>
+<p>Para inserir coisas do tipo x<sup>20+3</sup>, utizando a tag SUP
+</p>
+<h3>Texto subscrito</h3>
+<p>Para inserir coisas do tipo H<sub>2</sub>O, utizando a tag
+SUB.</p>
+<h1>Outras formatações</h1>
+<h2>Código fonte / Pré Formatado</h2>
+<p>O comando <code>documente.getElementById('teste')</code> é
+escrito na linguagem JavaScript.</p>
+<!--Para deixar o texto no formato que deseja sem precisar se preocupar com paragrafos e outras tags, pode-se usar a tag <pre></pre>-->
+<pre>
+<!--Para ter um código fonte, com as letras do mesmo tamanhos, usa-se a Tag <code></code>.-->
+<code>
+    num = int(input('Digite o número'))
+    if num % 2 == 0;
+        print(f'O {num} é PAR')
+    else:
+    print(f'O número é ÍMPAR')
+        print('Fim do Programa')
+</code>
+</pre>
+<h1>Listas Ordenadas</h1>
+<h2>lista numérica começando a partir do 4.</h2>
+<!--a Tag <ol></ol> é para criar uma lista ordenada-->
+<ol type="1" start="4">
+    <!--A tag <li></li> usa-se para ordenar-->
+<li>Acordar;</li>
+<li>Ligar para a amiga;</li>
+<li>Tomar café;</li>
+<li>Escovar os dentes;</li>
+</ol>
+<h2>Listas Ordenadas de letras maiúsculas</h2>
+<ol type="A">
+<li>Acordar;</li>
+<li>Ligar para a amiga;</li>
+<li>Tomar café;</li>
+<li>Escovar os dentes;</li>
+</ol>
+<h2>Listas Ordenadas de letras minúsculas</h2>
+<ol type="a">
+<li>Acordar;</li>
+<li>Ligar para a amiga;</li>
+<li>Tomar café;</li>
+<li>Escovar os dentes;</li>
+</ol>
+<h2>Listas Ordenadas de números romanos maiúculos</h2>
+<ol type="I">
+<li>Acordar;</li>
+<li>Ligar para a amiga;</li>
+<li>Tomar café;</li>
+<li>Escovar os dentes;</li>
+</ol>
+<h2>Listas Ordenadas de números romanos minúsculos</h2>
+<ol type="i">
+<li>Acordar;</li>
+<li>Ligar para a amiga;</li>
+<li>Tomar café;</li>
+<li>Escovar os dentes;</li>
+</ol>
+<h2>Listas não ordenadas do tipo 'circle'</h2>
+<ul type="circle">
+<li>Pão</li>
+<li>Tomate</li>
+<li>Manteiga</li>
+<li>Arroz</li>
+</ul>
+<h2>Listas não ordenadas do tipo 'disc'</h2>
+<ul type="disc">
+<li>Pão</li>
+<li>Tomate</li>
+<li>Manteiga</li>
+<li>Arroz</li>
+</ul>
+<h2>Listas não ordenadas do tipo 'square'</h2>
+<ul type="square">
+<li>Pão</li>
+<li>Tomate</li>
+<li>Manteiga</li>
+<li>Arroz</li>
+</ul>
+<h1>Lista dos meus jogos Favoritos:</h1>
+    <ul>
+        <li>Nintendinho</li>
+        <ol>
+            <li>Mario Bros:</li>
+            <ul type="square">
+                <li>Super Mario Bros 3;</li>
+                <li>Mario: Lost Lovers.</li>
+            </ul>
+            <li>Ninja Gaiden</li>
+            <ul type="square">
+                <li>Ninja Gaiden III</li>
+            </ul>
+        </ol>
+        <li>Super Nintendo</li>
+        <ol>
+            <li>Super Mario World</li>
+            <li>Donkey Kong</li>
+            <ul type="square">
+                <li>Donkey Kong Counrty III</li>
+                <li>Donkey Kong Quest</li>
+            </ul>
+        </ol>
+        <li>Playstation 1</li>
+        <ol>
+            <li>Final Fantasy</li>
+            <ul type="square">
+                <li>Final Fantasy VII</li>
+                <li>Final Fantasy IX</li>
+            </ul>
+            <li>Castlevania</li>
+            <ul type="square">
+                <li>Simphony of the Night</li>
+            </ul>
+        </ol>
+    </ul>
+    <h1>Veja como é facíl adicionar um vídeo do Youtube</h1>
+    <!-- Para colocar um vídeo do Youtube só copiar o link corporativo quando apetar para compartilhar. é parecido com esse que está abaixo.-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Rsj_z43oNRk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+</body>
+</html>
